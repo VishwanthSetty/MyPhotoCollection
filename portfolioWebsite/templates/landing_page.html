@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'common_css/basic.css' %}">
+    <link rel="stylesheet" href="{% static 'Users/css/cssStyles.css' %}">
+    <link rel="stylesheet" href="{% static 'common_css/pd-mr.css' %}">
+
+    <script rel="script" src="{% static 'common_js/topNav.js' %}"></script>
+
+    <title>PortFolio</title>
+</head>
+<body>
+
+    {#  Page Overlay  #}
+    <div class="pageOverlay"></div>
+
+    {#  Top Sliding Navigation Bar  #}
+    <button class="menuButton" id="topNavBtn"><b>&#9776;</b></button>
+    <div id="topNavCont" class="topNav">
+        <div class="aboutUsDiv">
+            <div class=""></div>
+            <button class="aboutUsNav">
+
+            </button>
+        </div>
+    </div>
+    <div id="pageOverlay"></div>
+
+    {#  Navigation Bar  #}
+    <nav class="mr-0 bg-tr">
+        <i class="far fa-user-circle mr-10 pd-5 fts-40"></i>
+    </nav>
+    <div style="height: 1000px;"></div>
+
+</body>
+</html>

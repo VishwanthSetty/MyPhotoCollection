@@ -1,0 +1,76 @@
+@import url("../../common_css/basic.css");
+
+body {
+    /*background-image: url("https://images.pexels.com/photos/1076040/pexels-photo-1076040.jpeg?cs=srgb&dl=blur-bright-color-1076040.jpg&fm=jpg");*/
+    background-image: url("https://images.pexels.com/photos/2242461/pexels-photo-2242461.jpeg?cs=srgb&dl=abstract-beautiful-blur-2242461.jpg&fm=jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+nav { background-color: silver; position: absolute }
+
+
+
+.menuButton {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 2;
+    top: 5px;
+    width: 500px;
+    height: 12px;
+    border: 0;
+    /*background-image: linear-gradient(to right bottom, #000046, #1CB5E0, #000046);*/
+    /*background-image: linear-gradient(to right bottom, #007991, #78ffd6, #007991);*/
+    /*background-image: linear-gradient(to right bottom, #fffc00, #ffffff, #fffc00);*/
+    background-image: linear-gradient(to right bottom, #0052D4, #9cecfb, #0052D4);
+    margin: auto; display: block;
+    color: black;
+    transition: 0.3s;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: -1px 2px 40px 2px rgba(00, 00, 00, 0.4);
+}
+.menuButton b { transition: 0.3s; font-size: 10px }
+
+
+
+.topNav {
+    position: fixed;
+    width: 100%;
+    height: 0;
+    top: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: gainsboro;
+    z-index: 1;
+    transition: 0.5s;
+    display: block;
+}
+
+
+.aboutUsDiv { position: relative }
+.aboutUsNavBack, .aboutUsNav {
+    position: absolute;
+}
+.aboutUsNav {
+    background-image: linear-gradient(to right bottom, #faffd1, #a1ffce, #faffd1);
+}
+.aboutUsNavBack {
+    background-color: silver;
+}
+
+
+
+.pageOverlay { position: fixed; width: 100%; height: 100%; background: black; opacity: 0.5; z-index: 0  }
+#pageOverlay { position: fixed; width: 100%; height: 100%; background: black; opacity: 0; transition: 0.5s }
+
+/*----------------------------------------*/
+/* HOVERS */
+
+
+.border-1-coral { border: 1px solid cyan; }
+.border-2-coral { border: 2px solid cornflowerblue; }
+.border-3-coral { border: 3px solid coral; }
+
+.border-rad-6 { border-radius: 6px }

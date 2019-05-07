@@ -1,0 +1,20 @@
+.pd-5 { padding: 5px; }
+.pd-10 { padding: 10px; }
+.pd-15 { padding: 15px; }
+
+.mr-0 { margin: 0 }
+.mr-5 { margin: 5px }
+.mr-10 { margin: 10px }
+.mr-15 { margin: 15px }
+
+.mr-t-5 { margin-top: 5px }
+.mr-t-10 { margin-top: 10px }
+.mr-t-15 { margin-top: 15px }
+
+
+.fts-10 { font-size: 10px }
+.fts-20 { font-size: 20px }
+.fts-40 { font-size: 40px }
+
+
+.bg-tr { background: transparent }
