@@ -1,6 +1,6 @@
-# from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render
+# from django.http import HttpResponse
 
 
-def landing_page():
-    return HttpResponse('This will be the landing Page...')
+def landing_page(request):
+    return render(request, 'landing_page.html')
