@@ -1,8 +1,8 @@
-## Welcome to GitHub Pages
+## PortFolio
 
-You can use the [editor on GitHub](https://github.com/sriram012/MyPhotoCollection/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is my own website which displays all my captures with categories.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+You can even go visit my captures on my [instagram](https://www.instagram.com/freakey_clicks/) page.
 
 ### Markdown
 
