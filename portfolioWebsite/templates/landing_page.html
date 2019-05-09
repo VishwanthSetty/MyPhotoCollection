@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="{% static 'common_css/pd-mr.css' %}">
 
     <script rel="script" src="{% static 'common_js/topNav.js' %}"></script>
+    <script rel="script" src="{% static 'common_js/search.js' %}"></script>
+    <script rel="script" src="{% static 'common_js/slideShow.js' %}"></script>
 
     <title>PortFolio</title>
 </head>
@@ -26,19 +28,87 @@
     {#  Top Sliding Navigation Bar  #}
     <button class="menuButton" id="topNavBtn"><b>&#9776;</b></button>
     <div id="topNavCont" class="topNav">
-        <div class="aboutUsDiv">
-            <div class=""></div>
-            <button class="aboutUsNav">
+        <div class="topNavUpper" id="topNavUpperCont">
 
-            </button>
+            {#  Profile in Navigation Bar  #}
+            <div class="profileNavDiv">
+                <h1 class="profileTitle">Log In</h1>
+                <button class="profileNavBack" disabled>
+                    <i class="fas fa-user"></i>
+                </button>
+                <button class="profileNav">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+
+            {#  FeedBack in Navigation Bar  #}
+            <div class="aboutUsDiv">
+                <h1 class="aboutUsTitle">Contact Us</h1>
+                <button class="aboutUsNavBack" disabled>
+                    <i class="fas fa-users"></i>
+                </button>
+                <button class="aboutUsNav">
+                    <i class="fas fa-users"></i>
+                </button>
+            </div>
+            {#  FeedBack in Navigation Bar  #}
+            <div class="aboutUsDiv">
+                <h1 class="aboutUsTitle">About Us</h1>
+                <button class="aboutUsNavBack" disabled>
+                    <i class="fas fa-users"></i>
+                </button>
+                <button class="aboutUsNav">
+                    <i class="fas fa-users"></i>
+                </button>
+            </div>
+            {#  FeedBack in Navigation Bar  #}
+            <div class="aboutUsDiv">
+                <h1 class="aboutUsTitle">Explore</h1>
+                <button class="aboutUsNavBack" disabled>
+                    <i class="fas fa-users"></i>
+                </button>
+                <button class="aboutUsNav">
+                    <i class="fas fa-users"></i>
+                </button>
+            </div>
+
         </div>
     </div>
     <div id="pageOverlay"></div>
 
     {#  Navigation Bar  #}
-    <nav class="mr-0 bg-tr">
-        <i class="far fa-user-circle mr-10 pd-5 fts-40"></i>
+    <nav class="pd-15" id="navBar">
+        <i class="fas fa-user-circle fts-40 profileBtn"></i>
+        <div class="btnGrp">
+            <div id="buttonsGrp">
+                <button class="exploreBtn" id="exploreBtn">Explore</button>
+                <button id="aboutUsBtn">About Us</button>
+            </div>
+            <button id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+        <form id="searchForm" class="searchForm">
+            <button class="searchCloseBtn" id="searchCloseBtn"><i class="fas fa-times"></i></button>
+            <input type="text" class="searchBox" id="searchBox" placeholder="Search..." required>
+            <button class="searchCnfrmBtn" type="submit"><i class="fas fa-search"></i></button>
+        </form>
     </nav>
+
+    {#  Intro Box, SlideShows  #}
+    <div class="introBox">
+        <div class="slideShow">
+            <div class="slides" id="slide1"></div>
+            <div class="slides" id="slide2"></div>
+            <div class="slides" id="slide3"></div>
+            <div class="slides" id="slide4"></div>
+
+            <div class="slidePointers">
+                <span class="slidePointer brd-white bg-white"></span>
+                <span class="slidePointer brd-white bg-tr"></span>
+                <span class="slidePointer brd-white bg-tr"></span>
+                <span class="slidePointer brd-white bg-tr"></span>
+            </div>
+        </div>
+    </div>
     <div style="height: 1000px;"></div>
 
 </body>

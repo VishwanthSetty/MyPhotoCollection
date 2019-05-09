@@ -1,6 +1,7 @@
 .pd-5 { padding: 5px; }
 .pd-10 { padding: 10px; }
 .pd-15 { padding: 15px; }
+.pd-20 { padding: 20px; }
 
 .mr-0 { margin: 0 }
 .mr-5 { margin: 5px }
@@ -17,4 +18,11 @@
 .fts-40 { font-size: 40px }
 
 
+.brd-white { border: 1px solid white }
+
+
+.br-50 { border-radius: 50%; }
+
+
 .bg-tr { background: transparent }
+.bg-white { background: white }
